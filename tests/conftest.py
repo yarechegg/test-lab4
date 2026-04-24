@@ -6,7 +6,6 @@ from services.db import get_dynamodb_resource
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_localstack_resources():
-    # ... твій код ініціалізації клієнтів ...
     dynamo_client = boto3.client(
         "dynamodb",
         endpoint_url=AWS_ENDPOINT_URL,

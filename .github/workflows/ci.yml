@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # Перевіряємо на двох версіях, як у прикладі Бойка
+
         python-version: ["3.13", "3.14"]
 
     services:
